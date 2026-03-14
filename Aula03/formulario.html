@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="cadastroForm" 
+    action="/processarDados" 
+    method="post"
+    autoComplete="on">
+
+        <!--campo de texto para inserção de dados-->
+
+        <label for="nome">Nome:</label>
+        <input required type="text" name="nome" id="nome">
+          <br />
+         <!--Required torna o campo obrigatório -->
+        
+ 
+        <label for="email">Email:</label>
+        <input required type="text" name="email" id="email" 
+        placeholder="Ex.:email@dominio.com">
+        <br />
+
+        
+        <label for="telefone">Telefone:</label>
+        <input type="text" name="telefone" id="telefone" 
+        placeholder="Ex.:(00) 00000-0000">
+
+         <br />
+
+         <!--Type password oculta o conteúdo do campo-->
+
+
+
+        <label for="senha">Senha:</label>
+         <input maxlength="5" type="password" name="senha" id="senha">
+            <br />
+            <label for="idade">Idade:</label>
+        <input maxlength="3" type="number" name="idade" id="idade"/>
+
+         <br />
+
+         <label for="nascimento">Hora:</label>
+    
+         <input type="time" name="horario" id="horario"/>
+            <br />
+
+            <!--type color permite selecionar uma cor-->
+
+            <label for="color">Cor:</label>
+            <input type="color" name="color" id="color"/>
+                <br />
+
+                <label for="range">Range:</label>
+                <input 
+                oninput="this".next
+                type="range"
+                min="0"
+                max="100"
+                value="25"
+                name="range"
+                 id="range"/>
+                 <h1>25</h1>
+                    <br />
+
+                    <input type="file" name="file" id="file"/>
+
+                    <input type="reset" value="Limpar">
+                    <br />
+
+                    <label for="checkbox">Aceito os termos:</label>
+                    <input type="checkbox" name="checkbox" id="checkbox"/>
+                    <br />
+                    <input type="radio" name="genero" id="masculino" value="masculino"/>
+                    <label for="masculino">Masculino</label>
+                    <br />
+                    <input type="radio" name="genero" id="feminino" value="feminino"/>
+                    <label for="feminino">Feminino</label>
+
+                    <input type="button" value="Botao" onclick="alert
+                    ('botao clicado')"/>
+
+                    <br /><br />
+
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea name="mensagem" id="mensagem" rows="5"> </textarea>
+                    <br /><br />
+
+                    <label for="cidade">Cidade:</label>
+                    <select name="cidade" id="cidade">
+                        <option value="">Selecione</option>
+                        <option value="sao_paulo">São Paulo</option>
+                        <option value="rio_de_janeiro">Rio de Janeiro</option>
+                        <option value="belo_horizonte">Belo Horizonte</option>
+                    </select>
+                    <br /><br />
+                    <label for="linguagens">Linguagens de programação:</label>
+                    <select name="linguagens" multiple size="6" id="linguagens">
+                        <option value="c#">C#</option>   
+                        <option value="javascript">JavaScript</option>
+                        <option value="python">Python</option>
+                        <option value="java">Java</option>
+                        <option value="csharp">C#</option>  
+                        <option value="ruby">Ruby</option>
+                    </select>                  
+                    <br /><br />
+
+                    <input list="navegadores" name="navegador">
+                    <datalist id="navegadores">
+                        <option value="Google Chrome">
+                        <option value="Mozilla Firefox">
+                        <option value="Microsoft Edge">
+                        <option value="Safari">
+                        <options value="Opera">
+                    </datalist>    
+
+                    
+
+                <input type="submit" value="Enviar">
+
+    </form>
+</body>
+</html>     
