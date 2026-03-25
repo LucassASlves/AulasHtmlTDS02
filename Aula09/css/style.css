@@ -1,0 +1,153 @@
+/* VARIÁVEIS */
+:root {
+  --azul: #0A1931;
+  --laranja: #E87030;
+  --cinza: #F7FAFC;
+  --texto: #333;
+  --branco: #FFFFFF;
+}
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: var(--cinza);
+  color: var(--texto);
+}
+
+/* NAVBAR */
+.navbar {
+  background: var(--azul);
+  color: var(--branco);
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* BOTÕES */
+.btn-primary {
+  background: var(--laranja);
+  color: var(--branco);
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn-outline {
+  background: transparent;
+  border: 2px solid var(--branco);
+  color: var(--branco);
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* HERO */
+.hero {
+  background: linear-gradient(#0A1931, #1e3a5f);
+  color: var(--branco);
+  padding: 32px 16px;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.hero img {
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.hero-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* BENEFÍCIOS */
+.beneficios {
+  padding: 32px 16px;
+  text-align: center;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.card {
+  background: var(--branco);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* DEPOIMENTO */
+.depoimento {
+  padding: 32px 16px;
+  text-align: center;
+}
+
+.depoimento-card img {
+  width: 80px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.depoimento-card span {
+  font-size: 14px;
+  color: gray;
+}
+
+/* FOOTER */
+.footer {
+  background: var(--azul);
+  color: var(--branco);
+  padding: 24px 16px;
+  text-align: center;
+}
+
+.footer ul {
+  list-style: none;
+  margin: 16px 0;
+}
+
+.footer a {
+  color: var(--branco);
+  text-decoration: none;
+}
+
+/* RESPONSIVO */
+@media (min-width: 768px) {
+
+  .hero {
+    flex-direction: row;
+    text-align: left;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .hero-buttons {
+    flex-direction: row;
+  }
+
+  .cards {
+    flex-direction: row;
+  }
+
+  .card {
+    flex: 1;
+  }
+
+}
