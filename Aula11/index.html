@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consumo de API Viacep</title>
+    <link rel="shortcut icon" href="../Aula11/assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./viacep/css/style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Consulta de CEP</h1>
+
+        <!--CAMPO DE ENTRADA DO CEP-->   
+        <div class="grupo-entrada-cep">        
+            <label for="cep">Digite o CEP:</label>
+            <input type="text" id="cep" name="cep" maxlength="8" />
+            <button id="btnbuscar">Buscar</button>
+            </div> 
+            
+
+            <!--CAMPOS PREENCHIDOS AUTOATICAMENTE-->
+            <div class="grupo-campos">
+            
+            <label for="logradouro">Logradouro:</label>
+            <input type="text" id="logradouro" name="logradouro" readonly/>            
+            </div>
+
+            <div class="grupo-campos">
+            <label for="bairro">Bairro:</label>
+            <input type="text" id="bairro" name="bairro" readonly />
+            </div>
+
+            <div class="linha-dois-campos"> 
+            <div class="grupo-campos">           
+            <label for="cidade">Cidade:</label>
+            <input type="text" id="cidade" name="cidade" readonly />
+             </div>
+
+            <div class="grupo-campos">
+            <label for="estado">Estado:</label>
+            <input type="text" id="estado" name="estado" readonly />
+            </div>  
+            </div>            
+    </div>
+
+
+
+
+    <script src="../Aula11/viacep/script.js"></script>
+</body>
+</html>     
