@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #fff8f0;
+}
+
+/* HEADER */
+header {
+  background-color: #c0392b;
+  color: white;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  color: white;
+  margin-left: 15px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #ffd700;
+}
+
+/* BANNER */
+.banner {
+  background: url('https://images.unsplash.com/photo-1601924638867-3ec2c8a8d0c9') center/cover;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-shadow: 2px 2px 5px black;
+}
+
+.banner button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  border: none;
+  background-color: #e74c3c;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.banner button:hover {
+  background-color: #c0392b;
+}
+
+/* CARDÁPIO */
+.cardapio {
+  padding: 20px;
+  text-align: center;
+}
+
+.pizza {
+  background-color: white;
+  margin: 15px auto;
+  padding: 15px;
+  width: 250px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.pizza:hover {
+  transform: scale(1.05);
+}
+
+/* FOOTER */
+footer {
+  background-color: #c0392b;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
